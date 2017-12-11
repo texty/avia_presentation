@@ -1,0 +1,504 @@
+//$bodyfontcol: #d1d1d4;
+//$bgcol: #242426;
+//$bodyelcolor: #4b4b4d;
+//$secondtext: #a1a1a4;
+//$barcol: #56fb1c;
+//$headcol: #9f8df7;
+$bodyfontcol: #242426;
+$bgcol: #f4f4f2;
+$bodyelcolor: #b9b9bc;
+$secondtext: #4b4b4d;
+$barcol: #00a5ff;
+$headcol: #00a5ff;
+$radarfont: PT Mono, monospace;
+$textfont: Open Sans, sans-serif;
+$letterspace: 0.04em;
+$skycol: #c1dbff;
+
+.full-screen {
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+#cloud-header canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background: $skycol; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient($skycol, white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient($skycol, white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($skycol, white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient($skycol, white); /* Standard syntax */
+}
+
+@media (max-width: 767px) {
+  :root {
+    font-size: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    font-size: 110%;
+  }
+}
+
+body {
+  font-family: $textfont;
+  color: $bodyfontcol;
+  background-color: $bgcol;
+  letter-spacing: $letterspace;
+}
+
+img#texty-logo, img#saau-logo {
+  max-height: 25px;
+  width: 100%;
+  max-width: 100%;
+}
+
+#social-icons a.share-btn {
+  color: $headcol;
+  text-decoration: none !important;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+#social-icons i {
+  color: $headcol;
+  cursor: pointer;
+}
+
+p.stressed-paragraph {
+  font-size: 4rem;
+  color: $headcol !important;
+  font-family: $radarfont !important;
+  font-weight: 800 !important;
+  line-height: 2em !important;
+}
+
+h1 {
+  font-size: 8rem;
+  color: $headcol;
+  font-family: $radarfont;
+  font-weight: 800;
+}
+h2 {
+  @extend  h1;
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+h2, p {
+  @extend body;
+  background-color: transparent;
+  font-size: 1em;
+  line-height: 2em;
+  font-weight: normal;
+}
+
+.text-link {
+  color: $barcol !important;
+  border-bottom: 3px dotted $bodyelcolor;
+  text-decoration: none !important;
+  //text-decoration: underline dotted $bodyelcolor;
+}
+
+.text-link:hover {
+  border-bottom: 1.5px dotted $barcol;
+
+}
+
+a.leaflet-control-zoom-in, a.leaflet-control-zoom-out {
+  background-color: $bgcol;
+  border-radius: 0 !important;
+  border: 1px solid $bodyelcolor !important;
+  margin: 0;
+  color: $bodyfontcol;
+}
+a.leaflet-control-zoom-in {
+  margin-bottom: 0.2em;
+}
+
+
+.leaflet-control-zoom .leaflet-bar .leaflet-control {
+  border: none !important;
+  box-shadow: none !important;
+  background: none !important;
+  text-shadow: none;
+}
+
+.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
+  border: none !important;
+}
+
+a.leaflet-control-zoom-in:hover, a.leaflet-control-zoom-out:hover {
+  background-color: $bodyelcolor;
+  border-radius: 0 !important;
+  margin: 0;
+  color: $bodyfontcol;
+}
+
+a.leaflet-control-zoom-in:hover {
+  margin-bottom: 0.2em;
+}
+
+.leaflet-control-attribution {
+  background-color: $bgcol !important;
+  color: $bodyfontcol;
+  font-family: $radarfont;
+  border: 0px;
+  a {
+    color: $headcol;
+  }
+}
+
+#update-info p {
+  font-family: $radarfont !important;
+  color: $barcol !important;
+  font-size: 11px !important;
+}
+
+.tooltip-inner {
+
+  max-width: 62vmin;
+  color: $bodyfontcol;
+  text-align: left;
+  background-color: darken($bgcol, 3%);
+  border-radius: 0;
+  border: none;
+  box-shadow: 1px 1px 1px 1px $bodyelcolor;
+  font-family: $radarfont !important;
+
+  .flight-codes {
+    color: $barcol;
+    font-weight: 600;
+  }
+  span.open_sky_map {
+    color: $barcol;
+    font-weight: 400;
+  }
+
+}
+
+nav#table-header {
+  position: sticky !important;
+  position: -webkit-sticky !important;
+  top: -1px;
+  z-index: 4200 !important;
+  background-color: $bgcol;
+  border-bottom: solid $bodyelcolor 0.22px;
+}
+
+button#dropdownMenuButton {
+  @extend body;
+  cursor: pointer;
+  border: none;
+  color: $secondtext;
+  font-family: $radarfont !important;
+
+}
+
+.dropdown-menu {
+  @extend body;
+  border: none;
+  border-radius: 0;
+  background-color: $bgcol;
+  font-family: $radarfont !important;
+}
+
+label.menu-airline {
+  color: $bodyfontcol;
+  display: block;
+  padding: 0.25em;
+  border: solid $bodyelcolor 0.22px;
+  font-family: $radarfont !important;
+}
+
+i.fa-plane {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+label.menu-airline i {
+  color: $barcol;
+}
+
+label.menu-airline.airline-removed i {
+  color: $bodyfontcol;
+}
+
+#select-all-checkbox {
+  font-style: italic;
+}
+
+input#country-input {
+  @extend body;
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  outline-color: transparent !important;
+  color: $bodyfontcol;
+  font-family: $radarfont !important;
+}
+input#country-input::-webkit-input-placeholder {
+  text-align: end;
+  color: $secondtext;
+  font-family: $radarfont !important;
+}
+
+input#country-input::-moz-placeholder {
+  text-align: end;
+  color: $secondtext;
+  font-family: $radarfont !important;
+}
+
+input#country-input:-moz-placeholder {
+  text-align: end;
+  color: $secondtext;
+  font-family: $radarfont !important;
+}
+
+input#country-input:-ms-input-placeholder {
+  text-align: end;
+  color: $secondtext;
+  font-family: $radarfont !important;
+}
+
+.tt-menu {
+  padding-left: 1rem;
+  display: none !important;
+  font-family: $radarfont !important;
+}
+
+.tt-hint {
+  width: 100%;
+  color: $secondtext;
+  font-family: $radarfont !important;
+}
+
+div#table-body {
+  font-family: $radarfont !important;
+}
+
+div.country-profile-row {
+  padding: 1px;
+}
+
+div.country-name {
+  color: $headcol;
+  vertical-align: middle;
+  font-weight: 600;
+}
+
+.card-open div.country-name {
+  font-weight: 800;
+}
+
+rect.permission {
+  fill-opacity: 0;
+  stroke: $barcol;
+  stroke-width: 1.5px;
+}
+
+div.permission rect.permission {
+  stroke-width: 0.5px;
+}
+
+rect.flight {
+  stroke-opacity: 0;
+  fill: $barcol;
+}
+
+.country-total p {
+  fill: $bodyfontcol;
+  font-size: 0.85rem;
+  alignment-baseline: hanging;
+}
+
+.open_sky_badge {
+  font-weight: 200;
+  background-color: white;
+  color: $bodyfontcol;
+  font-size: 0.8em;
+  border: 1px dotted $barcol;
+}
+
+.uncollapse-card i {
+  color: $headcol;
+  font-size: 0.9rem;
+}
+
+div.already-viewed {
+  background-color: darken($bgcol, 3%);
+}
+
+div.card-open {
+  border: 0.01rem solid rgba($barcol, 0.25);
+}
+
+div.collapse {
+  background-color: $bgcol;
+}
+
+.permissions-heading, .treaty-heading {
+  @extend p.stressed-paragraph;
+  font-size: 1rem;
+
+}
+
+div.permission {
+  div, svg {
+    padding-left: 23%;
+    overflow: visible;
+  }
+
+  .frequency-axis-x {
+    text {
+      font-size: 0.7em;
+      fill: $secondtext;
+    }
+
+    path, line {
+      stroke-width: 0.2px;
+      stroke: $secondtext;
+      stroke-opacity: 1;
+    }
+  }
+
+  .airlines-axis-y {
+    path {
+      display: none;
+    }
+
+    line {
+      stroke-width: 0.2px;
+      stroke: $secondtext;
+      stroke-opacity: 1;
+    }
+
+    text {
+      fill: $secondtext;
+      font-size: 0.7em;
+    }
+
+    text.no-flights-airline-lab {
+      fill: $bodyelcolor
+    }
+  }
+
+  text.flights-per-week-lab {
+    font-style: italic;
+    font-size: 0.5rem;
+    fill: $secondtext;
+  }
+}
+
+.is_occupied {
+  .route-header {
+    //color: lighten($bodyfontcol, 15%);
+    text-decoration: underline dotted $headcol;
+  }
+
+
+}
+
+div.treaty-table-col-main {
+  border-bottom: $barcol dotted 0.6px;
+}
+
+p.limit-heading {
+  color: $headcol;
+  text-transform: uppercase;
+}
+
+.ua-points {
+  color: $barcol;
+}
+
+.foreign-points i, .limit-figure {
+  color: $barcol;
+  font-size: 1rem;
+}
+
+.unlimited-points, .unlimited-limit {
+  font-size: 1rem;
+  color: $barcol;
+  font-style: italic;
+}
+
+#disclaimer-promo {
+  background-color: #ffffff;
+  #partners img {
+    max-height: 7rem;
+  }
+}
+
+#footer {
+  z-index: 4500;
+  bottom: 0;
+  width: 100%;
+  background: $bodyfontcol none repeat scroll 0 0;
+  text-align: left;
+  font-size: 14px;
+  padding: 1.5rem;
+  display: block;
+  margin: 0;
+}
+
+#footer h4 {
+  font-size: 18px;
+  color: $bgcol;
+
+}
+
+#footer a {
+  text-decoration: none;
+  font-size: 0.7em;
+  color: $bgcol;
+}
+
+@media (max-width: 767px) {
+
+  .country-total p {
+    font-size: 0.7rem;
+  }
+
+  #footer li {
+    display: none;
+  }
+}
+
+#footer a:hover, a.support-site {
+  color: #FAA61A !important;
+}
+
+.copying-info {
+  padding-top: 20px;
+  font-size: 0.7em;
+  line-height: 1rem;
+  color: $bodyelcolor;
+}
+
+#thank-you-d3 {
+  padding-top: 20px;
+  color: $bodyelcolor;
+  font-size: 0.7em;
+  line-height: 1rem;
+
+  a{
+    text-decoration: none;
+    color: $bodyelcolor;
+    font-size: 1em !important;
+
+    i {
+      color: crimson;
+    }
+  }
+}

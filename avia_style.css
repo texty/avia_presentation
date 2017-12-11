@@ -1,0 +1,374 @@
+.full-screen {
+  width: 100vw !important;
+  height: 100vh !important; }
+
+#cloud-header canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background: #c1dbff;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#c1dbff, white);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#c1dbff, white);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#c1dbff, white);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#c1dbff, white);
+  /* Standard syntax */ }
+
+@media (max-width: 767px) {
+  :root {
+    font-size: 90%; } }
+@media (min-width: 768px) {
+  :root {
+    font-size: 110%; } }
+body, h2, p, button#dropdownMenuButton, .dropdown-menu, input#country-input {
+  font-family: Open Sans, sans-serif;
+  color: #242426;
+  background-color: #f4f4f2;
+  letter-spacing: 0.04em; }
+
+img#texty-logo, img#saau-logo {
+  max-height: 25px;
+  width: 100%;
+  max-width: 100%; }
+
+#social-icons a.share-btn {
+  color: #00a5ff;
+  text-decoration: none !important;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem; }
+
+#social-icons i {
+  color: #00a5ff;
+  cursor: pointer; }
+
+p.stressed-paragraph, .permissions-heading, .treaty-heading {
+  font-size: 4rem;
+  color: #00a5ff !important;
+  font-family: PT Mono, monospace !important;
+  font-weight: 800 !important;
+  line-height: 2em !important; }
+
+h1, h2 {
+  font-size: 8rem;
+  color: #00a5ff;
+  font-family: PT Mono, monospace;
+  font-weight: 800; }
+
+h2 {
+  font-weight: 400;
+  font-size: 4rem; }
+
+h2, p {
+  background-color: transparent;
+  font-size: 1em;
+  line-height: 2em;
+  font-weight: normal; }
+
+.text-link {
+  color: #00a5ff !important;
+  border-bottom: 3px dotted #b9b9bc;
+  text-decoration: none !important; }
+
+.text-link:hover {
+  border-bottom: 1.5px dotted #00a5ff; }
+
+a.leaflet-control-zoom-in, a.leaflet-control-zoom-out {
+  background-color: #f4f4f2;
+  border-radius: 0 !important;
+  border: 1px solid #b9b9bc !important;
+  margin: 0;
+  color: #242426; }
+
+a.leaflet-control-zoom-in {
+  margin-bottom: 0.2em; }
+
+.leaflet-control-zoom .leaflet-bar .leaflet-control {
+  border: none !important;
+  box-shadow: none !important;
+  background: none !important;
+  text-shadow: none; }
+
+.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
+  border: none !important; }
+
+a.leaflet-control-zoom-in:hover, a.leaflet-control-zoom-out:hover {
+  background-color: #b9b9bc;
+  border-radius: 0 !important;
+  margin: 0;
+  color: #242426; }
+
+a.leaflet-control-zoom-in:hover {
+  margin-bottom: 0.2em; }
+
+.leaflet-control-attribution {
+  background-color: #f4f4f2 !important;
+  color: #242426;
+  font-family: PT Mono, monospace;
+  border: 0px; }
+  .leaflet-control-attribution a {
+    color: #00a5ff; }
+
+#update-info p {
+  font-family: PT Mono, monospace !important;
+  color: #00a5ff !important;
+  font-size: 11px !important; }
+
+.tooltip-inner {
+  max-width: 62vmin;
+  color: #242426;
+  text-align: left;
+  background-color: #ededea;
+  border-radius: 0;
+  border: none;
+  box-shadow: 1px 1px 1px 1px #b9b9bc;
+  font-family: PT Mono, monospace !important; }
+  .tooltip-inner .flight-codes {
+    color: #00a5ff;
+    font-weight: 600; }
+  .tooltip-inner span.open_sky_map {
+    color: #00a5ff;
+    font-weight: 400; }
+
+nav#table-header {
+  position: sticky !important;
+  position: -webkit-sticky !important;
+  top: -1px;
+  z-index: 4200 !important;
+  background-color: #f4f4f2;
+  border-bottom: solid #b9b9bc 0.22px; }
+
+button#dropdownMenuButton {
+  cursor: pointer;
+  border: none;
+  color: #4b4b4d;
+  font-family: PT Mono, monospace !important; }
+
+.dropdown-menu {
+  border: none;
+  border-radius: 0;
+  background-color: #f4f4f2;
+  font-family: PT Mono, monospace !important; }
+
+label.menu-airline {
+  color: #242426;
+  display: block;
+  padding: 0.25em;
+  border: solid #b9b9bc 0.22px;
+  font-family: PT Mono, monospace !important; }
+
+i.fa-plane {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+label.menu-airline i {
+  color: #00a5ff; }
+
+label.menu-airline.airline-removed i {
+  color: #242426; }
+
+#select-all-checkbox {
+  font-style: italic; }
+
+input#country-input {
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  outline-color: transparent !important;
+  color: #242426;
+  font-family: PT Mono, monospace !important; }
+
+input#country-input::-webkit-input-placeholder {
+  text-align: end;
+  color: #4b4b4d;
+  font-family: PT Mono, monospace !important; }
+
+input#country-input::-moz-placeholder {
+  text-align: end;
+  color: #4b4b4d;
+  font-family: PT Mono, monospace !important; }
+
+input#country-input:-moz-placeholder {
+  text-align: end;
+  color: #4b4b4d;
+  font-family: PT Mono, monospace !important; }
+
+input#country-input:-ms-input-placeholder {
+  text-align: end;
+  color: #4b4b4d;
+  font-family: PT Mono, monospace !important; }
+
+.tt-menu {
+  padding-left: 1rem;
+  display: none !important;
+  font-family: PT Mono, monospace !important; }
+
+.tt-hint {
+  width: 100%;
+  color: #4b4b4d;
+  font-family: PT Mono, monospace !important; }
+
+div#table-body {
+  font-family: PT Mono, monospace !important; }
+
+div.country-profile-row {
+  padding: 1px; }
+
+div.country-name {
+  color: #00a5ff;
+  vertical-align: middle;
+  font-weight: 600; }
+
+.card-open div.country-name {
+  font-weight: 800; }
+
+rect.permission {
+  fill-opacity: 0;
+  stroke: #00a5ff;
+  stroke-width: 1.5px; }
+
+div.permission rect.permission {
+  stroke-width: 0.5px; }
+
+rect.flight {
+  stroke-opacity: 0;
+  fill: #00a5ff; }
+
+.country-total p {
+  fill: #242426;
+  font-size: 0.85rem;
+  alignment-baseline: hanging; }
+
+.open_sky_badge {
+  font-weight: 200;
+  background-color: white;
+  color: #242426;
+  font-size: 0.8em;
+  border: 1px dotted #00a5ff; }
+
+.uncollapse-card i {
+  color: #00a5ff;
+  font-size: 0.9rem; }
+
+div.already-viewed {
+  background-color: #ededea; }
+
+div.card-open {
+  border: 0.01rem solid rgba(0, 165, 255, 0.25); }
+
+div.collapse {
+  background-color: #f4f4f2; }
+
+.permissions-heading, .treaty-heading {
+  font-size: 1rem; }
+
+div.permission div, div.permission svg {
+  padding-left: 23%;
+  overflow: visible; }
+div.permission .frequency-axis-x text {
+  font-size: 0.7em;
+  fill: #4b4b4d; }
+div.permission .frequency-axis-x path, div.permission .frequency-axis-x line {
+  stroke-width: 0.2px;
+  stroke: #4b4b4d;
+  stroke-opacity: 1; }
+div.permission .airlines-axis-y path {
+  display: none; }
+div.permission .airlines-axis-y line {
+  stroke-width: 0.2px;
+  stroke: #4b4b4d;
+  stroke-opacity: 1; }
+div.permission .airlines-axis-y text {
+  fill: #4b4b4d;
+  font-size: 0.7em; }
+div.permission .airlines-axis-y text.no-flights-airline-lab {
+  fill: #b9b9bc; }
+div.permission text.flights-per-week-lab {
+  font-style: italic;
+  font-size: 0.5rem;
+  fill: #4b4b4d; }
+
+.is_occupied .route-header {
+  text-decoration: underline dotted #00a5ff; }
+
+div.treaty-table-col-main {
+  border-bottom: #00a5ff dotted 0.6px; }
+
+p.limit-heading {
+  color: #00a5ff;
+  text-transform: uppercase; }
+
+.ua-points {
+  color: #00a5ff; }
+
+.foreign-points i, .limit-figure {
+  color: #00a5ff;
+  font-size: 1rem; }
+
+.unlimited-points, .unlimited-limit {
+  font-size: 1rem;
+  color: #00a5ff;
+  font-style: italic; }
+
+#disclaimer-promo {
+  background-color: #ffffff; }
+  #disclaimer-promo #partners img {
+    max-height: 7rem; }
+
+#footer {
+  z-index: 4500;
+  bottom: 0;
+  width: 100%;
+  background: #242426 none repeat scroll 0 0;
+  text-align: left;
+  font-size: 14px;
+  padding: 1.5rem;
+  display: block;
+  margin: 0; }
+
+#footer h4 {
+  font-size: 18px;
+  color: #f4f4f2; }
+
+#footer a {
+  text-decoration: none;
+  font-size: 0.7em;
+  color: #f4f4f2; }
+
+@media (max-width: 767px) {
+  .country-total p {
+    font-size: 0.7rem; }
+
+  #footer li {
+    display: none; } }
+#footer a:hover, a.support-site {
+  color: #FAA61A !important; }
+
+.copying-info {
+  padding-top: 20px;
+  font-size: 0.7em;
+  line-height: 1rem;
+  color: #b9b9bc; }
+
+#thank-you-d3 {
+  padding-top: 20px;
+  color: #b9b9bc;
+  font-size: 0.7em;
+  line-height: 1rem; }
+  #thank-you-d3 a {
+    text-decoration: none;
+    color: #b9b9bc;
+    font-size: 1em !important; }
+    #thank-you-d3 a i {
+      color: crimson; }
+
+/*# sourceMappingURL=avia_style.css.map */
